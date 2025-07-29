@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order </title>
+  <link rel="stylesheet" href="/css files/order.css">
+</head>
+
+<body>
+  <header class="header">
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"> <span>Auto</span>Vero </a>
+
+    <nav class="navbar">
+      <a href="/htmlfiles/inde.html">home</a>
+      <a href="/htmlfiles/order.html">Order Management</a>
+      <a href="/htmlfiles/supplier.html">Supplier Management</a>
+      <a href="/htmlfiles/contract.html">contract Management</a>
+      <a href="#reviews">reviews</a>
+      <a href="#">price comparison</a>
+    </nav>
+
+    <div id="login-btn">
+      <button class="btn">login</button>
+      <i class="far fa-user"></i>
+    </div>
+
+  </header>
+  <div class="login-form-container">
+
+    <span id="close-login-form" class="fas fa-times"></span>
+
+    <form action="">
+      <h3>user login</h3>
+      <input type="email" placeholder="email" class="box">
+      <input type="password" placeholder="password" class="box">
+      <p> forget your password <a href="#">click here</a> </p>
+      <input type="submit" value="login" class="btn">
+      <p> don't have an account <a href="#">create one</a> </p>
+    </form>
+  </div>
+
+  <div class="container">
+    <!-- Order Box -->
+    <div class="order-box">
+      <h2>Order Now</h2>
+      <form>
+        <label for="item">Choose an item:</label>
+        <select id="item" name="item">
+          <option value="BMW">BMW</option>
+          <option value="BYD">BYD</option>
+          <option value="Mercedes">Mercedes</option>
+          <option value="Toyota">Toyota</option>
+          <option value="Zeekr">Zeekr</option>
+          <option value="Nissan">Nissan</option>
+          <option value="porsh">Porsh</option>
+        </select>
+        <label for="model">Model:</label>
+        <select id="model" name="model">
+          <option value="X1">X1</option>
+          <option value="X2">X2</option>
+          <option value="X3">X3</option>
+        </select>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+        <label for="price">price</label>
+        <input type="text" id="price" name="price"
+        min="1" value="Negotiable" >
+        <button type="submit">Place Order</button>
+      </form>
+    </div>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="/image/order1.jpg" alt="car 1">
+      </div>
+      <div class="mySlides">
+        <img src="/image/order2.jpg" alt="Car 2">
+      </div>
+      <div class="mySlides">
+        <img src="/image/order3.jpg" alt="Car 3">
+      </div>
+      <div class="mySlides">
+        <img src="/image/order4.jpg" alt="Car 3">
+      </div>
+      <div class="mySlides">
+        <img src="/image/order55.jpg" alt="Car 3">
+      </div>
+      <div class="mySlides">
+        <img src="/image/order6.jpg" alt="Car 3">
+      </div>
+      <div class="mySlides">
+        <img src="/image/order1.jpg" alt="car 1">
+      </div>
+      <div class="mySlides">
+        <img src="/image/porshe.avif" alt="car 1">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </div>
+  <section class="footer" id="footer">
+  
+    <div class="box-container">
+  
+      <div class="box">
+        <h3>Our Branches</h3>
+        <a href="#"> <i class="fas fa-map-marker-alt"></i> Morocco </a>
+        <a href="#"> <i class="fas fa-map-marker-alt"></i> Japan </a>
+        <a href="#"> <i class="fas fa-map-marker-alt"></i> France </a>
+        <a href="#"> <i class="fas fa-map-marker-alt"></i> Russia </a>
+        <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+      </div>
+  
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="/htmlfiles/inde.html"> <i class="fas fa-arrow-right"></i> home </a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> vehicles </a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> services </a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+      </div>
+  
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="#"> <i class="fas fa-phone"></i> 15365053793 </a>
+        <a href="#"> <i class="fas fa-envelope"></i> ilyassougaaddi@gmail.com </a>
+        <a href="#"> <i class="fas fa-map-marker-alt"></i> NUIST </a>
+      </div>
+  
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+        <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+        <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+        <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+      </div>
+  
+    </div>
+  
+  </section>
+
+  <script src="/JS files/test.js "></script>
+</body>
+
+</html>

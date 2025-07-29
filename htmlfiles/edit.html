@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Supplier</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container mt-3">
+    <h4>Edit Supplier Details</h4>
+    <form>
+      <!-- Supplier Name -->
+      <div class="form-group">
+        <label for="supplierName">Supplier Name</label>
+        <input type="text" class="form-control" id="supplierName" placeholder="Enter supplier name" required>
+      </div>
+
+      <!-- Supplier Email -->
+      <div class="form-group">
+        <label for="supplierEmail">Email</label>
+        <input type="email" class="form-control" id="supplierEmail" placeholder="Enter supplier email" required>
+      </div>
+
+      <!-- Supplier Phone -->
+      <div class="form-group">
+        <label for="supplierPhone">Phone</label>
+        <input type="text" class="form-control" id="supplierPhone" placeholder="Enter supplier phone" required>
+      </div>
+
+      <!-- Supplier Address -->
+      <div class="form-group">
+        <label for="supplierAddress">Address</label>
+        <textarea class="form-control" id="supplierAddress" rows="3" placeholder="Enter supplier address"
+          required></textarea>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="form-group text-right">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-secondary"
+          onclick="window.parent.$('#exampleModal1').modal('hide')">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
